@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Tab Bar</Title>
+    <Author>Microsoft Corporation</Author>
+    <Description>Snippet for a new Tab Bar menu with multiple items</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>tb</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>ItemName1</ID>
+        <ToolTip>The name of the flyout item</ToolTip>
+        <Default>Menu Item</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>ContentPage1</ID>
+        <ToolTip>The ContentPage to display</ToolTip>
+        <Default>pages:ContentPage</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>ItemName2</ID>
+        <ToolTip>The name of the flyout item</ToolTip>
+        <Default>Menu Item</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>ContentPage2</ID>
+        <ToolTip>The ContentPage to display</ToolTip>
+        <Default>pages:ContentPage</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>ItemName3</ID>
+        <ToolTip>The name of the flyout item</ToolTip>
+        <Default>Menu Item</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>ContentPage3</ID>
+        <ToolTip>The ContentPage to display</ToolTip>
+        <Default>pages:ContentPage</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="XAML">
+      <![CDATA[<TabBar>
+      <Tab Title="$ItemName1$">
+        <ShellContent ContentTemplate="{DataTemplate $ContentPage1$}"/>
+    </Tab>
+    <Tab Title="$ItemName2$">
+        <ShellContent ContentTemplate="{DataTemplate $ContentPage2$}"/>
+    </Tab>
+    <Tab Title="$ItemName3$">
+        <ShellContent ContentTemplate="{DataTemplate $ContentPage3$}"/>
+    </Tab>
+    </TabBar>]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>FlyoutItem Template</Title>
+    <Author>Microsoft Corporation</Author>
+    <Description>Snippet for templating a flyout menu item</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>temp-flyout</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      
+    </Declarations>
+    <Code Language="XAML">
+      <![CDATA[<Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="0.8*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding FlyoutIcon}"
+                       Margin="5"
+                       HeightRequest="45" />
+                <Label Grid.Column="1"
+                       Text="{Binding Title}"
+                       FontAttributes="Italic"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

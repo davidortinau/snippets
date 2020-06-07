@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Tab</Title>
+    <Author>Microsoft Corporation</Author>
+    <Description>Snippet for a new tab in a Shell menu</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>tab</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>Icon1</ID>
+        <ToolTip>The resource to display for an icon</ToolTip>
+        <Default>Icon</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>ItemName1</ID>
+        <ToolTip>The name of the flyout item</ToolTip>
+        <Default>Menu Item</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>ContentPage1</ID>
+        <ToolTip>The ContentPage to display</ToolTip>
+        <Default>pages:ContentPage</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="XAML">
+      <![CDATA[<Tab Icon="$Icon1$" Title="$ItemName1$">
+        <ShellContent ContentTemplate="{DataTemplate $ContentPage1$}"/>
+    </Tab>]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

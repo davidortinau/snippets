@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>FlyoutItem</Title>
+    <Author>Microsoft Corporation</Author>
+    <Description>Snippet for a new FlyoutItem</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>fli</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>ItemName</ID>
+        <ToolTip>The name of the flyout item</ToolTip>
+        <Default>Menu Item</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>ContentPage</ID>
+        <ToolTip>The ContentPage to display</ToolTip>
+        <Default>pages:ContentPage</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="XAML">
+      <![CDATA[<FlyoutItem Title="$ItemName$">
+        <ShellContent ContentTemplate="{DataTemplate $ContentPage$}"/>
+    </FlyoutItem>]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

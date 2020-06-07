@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Shell Styles</Title>
+    <Author>Microsoft Corporation</Author>
+    <Description>Snippet for styling Shell elements</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>shell-styles</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>BackgroundColor</ID>
+        <ToolTip>The background color of the navigation bar</ToolTip>
+        <Default>DeepOrange</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>ForegroundColor</ID>
+        <ToolTip>The foreground color of the app</ToolTip>
+        <Default>White</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>TitleColor</ID>
+        <ToolTip>The color of the text in the navigation bar</ToolTip>
+        <Default>White</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>DisabledColor</ID>
+        <ToolTip>The color of tabs that are disabled</ToolTip>
+        <Default>#B4000000</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>UnselectedColor</ID>
+        <ToolTip>The color of unselected tabs</ToolTip>
+        <Default>#CC0000</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>NavBarHasShadow</ID>
+        <ToolTip>If the navigation bar should display a shadow</ToolTip>
+        <Default>False</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>MenuType</ID>
+        <ToolTip>FlyoutItem or Tab</ToolTip>
+        <Default>FlyoutItem</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="XAML">
+      <![CDATA[<!-- Shell -->
+    <Style x:Key="BaseStyle"
+           TargetType="Element">
+        <Setter Property="Shell.BackgroundColor"
+                Value="$BackgroundColor$" />
+        <Setter Property="Shell.ForegroundColor"
+                Value="$ForegroundColor$" />
+        <Setter Property="Shell.TitleColor"
+                Value="$TitleColor$" />
+        <Setter Property="Shell.DisabledColor"
+                Value="$DisabledColor$" />
+        <Setter Property="Shell.UnselectedColor"
+                Value="$UnselectedColor$" />
+        <Setter Property="Shell.NavBarHasShadow"
+                Value="$NavBarHasShadow$"/>
+    </Style>
+    <Style BasedOn="{StaticResource BaseStyle}"
+           ApplyToDerivedTypes="True"
+           TargetType="$MenuType$" />]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>MenuItem Template</Title>
+    <Author>Microsoft Corporation</Author>
+    <Description>Snippet for templating a menu item</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>temp-menu</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      
+    </Declarations>
+    <Code Language="XAML">
+      <![CDATA[<Shell.MenuItemTemplate>
+        <DataTemplate>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="0.8*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding Icon}"
+                       Margin="5"
+                       HeightRequest="45" />
+                <Label Grid.Column="1"
+                       Text="{Binding Text}"
+                       FontAttributes="Italic"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.MenuItemTemplate>]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
