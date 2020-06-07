@@ -4,7 +4,7 @@
 
 > You know the stuff that you have to write over and over, but can never quite remember the ceremony? The same stuff you find in an old project, or some blog, or some GitHub repos and promptly forget to make it easy to access. Those are code snippets. 
 
-I don't maintain my own collection of code snippets, primarily because I'm a lazy developer. Also in my role at Microsoft I reinstall my Visual Studio environment often. Oh, and because until today I didn't $#*&#$^ know how to add snippets. Now that I've done it, I'll promptly forget. 
+I don't maintain my own collection of code snippets, primarily because I'm a lazy developer. Also in my role at Microsoft I reinstall my Visual Studio environment often. Oh, and because until today I didn't $#*&#$^ know how to add snippets. Now that I've done it, I'll promptly forget. :P
 
 ## Shell Snippets
 
