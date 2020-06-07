@@ -1,4 +1,4 @@
-# Code Snippets for Visual Studio
+# Shell XAML Snippets for Visual Studio
 
 [Luis Matos](https://twitter.com/luismatosluna) has organized [an entire month of community blogging](https://luismts.com/code-snippetss-xamarin-month/) around code snippets. He gives a fine definition of what code snippets are, but I'll give you my definition.
 
